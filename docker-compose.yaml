@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mongo_db:
+    image: mongo
+    environment:
+        MONGO_URL : "mongodb://localhost:27017/"
+        MONGO_DB : "mydb"
+        PORT : 8080
+    ports:
+      - 27017:27017
+    restart: always
