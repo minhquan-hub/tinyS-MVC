@@ -25,5 +25,5 @@ exports.grossToNet_create = function (req, res) {
     //     }
     // })
 
-    res.render("Home", {gross:req.body.gross , socialInsurance:-returnValue.socialInsurance, healthInsurance:-returnValue.healthInsurance, unemploymentInsurance:-returnValue.unemploymentInsurance, tax:-returnValue.tax, net:returnValue.net});
+    res.render("home", {gross:req.body.gross , socialInsurance:-returnValue.socialInsurance, healthInsurance:-returnValue.healthInsurance, unemploymentInsurance:-returnValue.unemploymentInsurance, tax:-returnValue.tax, net:returnValue.net});
 };
